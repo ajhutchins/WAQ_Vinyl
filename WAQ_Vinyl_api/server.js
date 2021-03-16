@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 
 const userController = require('./controllers/users');
 const vinylController = require('./controllers/vinyl');
+const collectionController = require('./controllers/collection');
 
 const APP = express();
 const PORT = 3003;
@@ -38,6 +39,7 @@ APP.use(express.json());
 
 APP.use('/users', userController);
 APP.use('/vinyl', vinylController);
+APP.use('/users/collection', collectionController);
 
 
 APP.listen(PORT, () => {
