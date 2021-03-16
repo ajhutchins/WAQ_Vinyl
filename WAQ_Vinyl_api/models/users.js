@@ -7,8 +7,8 @@ const usersSchema = new mongoose.Schema({
         unique: true,
         required: true
     },
-    wishlist: [ {type: mongoose.Schema.Types.ObjectId, ref: 'WishList'} ],
-    collection: [ {type: mongoose.Schema.Types.ObjectId, ref: 'Collection'} ],
+    wishlist: [ {type: mongoose.Schema.Types.ObjectId, ref: 'Vinyl'} ],
+    myCollection: [ {type: mongoose.Schema.Types.ObjectId, ref: 'Vinyl'} ],
     password: String
 });
 
