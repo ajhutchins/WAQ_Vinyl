@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 // const cors = require('cors');
 
 const collectionsController = require('./controllers/collections');
-// const vinylController = require('./controllers/vinyl');
+const vinylController = require('./controllers/vinyl');
 
 const APP = express();
 const PORT = 3003;
@@ -37,7 +37,7 @@ APP.get('/', (req, res) => {
 APP.use(express.json());
 
 APP.use('/collections', collectionsController);
-// APP.use('/vinyl', vinylController);
+APP.use('/vinyl', vinylController);
 
 
 APP.listen(PORT, () => {

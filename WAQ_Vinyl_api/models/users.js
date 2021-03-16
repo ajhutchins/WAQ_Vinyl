@@ -4,8 +4,7 @@ const mongoose = require('mongoose');
 const usersSchema = new mongoose.Schema({
     username: {
         type: String,
-        unique: true,
-        required: true
+        unique: true
     },
     wishlist: [ {type: mongoose.Schema.Types.ObjectId, ref: 'Vinyl'} ],
     myCollection: [ {type: mongoose.Schema.Types.ObjectId, ref: 'Vinyl'} ],
