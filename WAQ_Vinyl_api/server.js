@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 // const cors = require('cors');
 
-const collectionsController = require('./controllers/collections');
+const userController = require('./controllers/users');
 const vinylController = require('./controllers/vinyl');
 
 const APP = express();
@@ -36,7 +36,7 @@ APP.get('/', (req, res) => {
 
 APP.use(express.json());
 
-APP.use('/collections', collectionsController);
+APP.use('/users', userController);
 APP.use('/vinyl', vinylController);
 
 
