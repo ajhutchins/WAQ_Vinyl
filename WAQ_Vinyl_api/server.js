@@ -54,7 +54,7 @@ APP.use('/users', userController);
 APP.use('/vinyl', vinylController);
 APP.use('/users/collection', collectionController);
 APP.use('/users/wishlist', wishlistController);
-APP.use('/sessions_controller.js');
+APP.use('/sessions_controller.js', sessionsController);
 
 
 APP.listen(PORT, () => {
