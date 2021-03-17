@@ -18,7 +18,14 @@
   },
   "homepage": "https://github.com/ajhutchins/WAQ_Vinyl#readme",
   "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "express-session": "^1.17.1",
     "mongoose": "^5.12.0"
+  },
+  "engines": {
+    "node": "14.15.4",
+    "npm": "6.14.10"
   }
 }
