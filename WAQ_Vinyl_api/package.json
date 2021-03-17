@@ -24,8 +24,12 @@
     "express-session": "^1.17.1",
     "mongoose": "^5.12.0"
   },
+<<<<<<< HEAD
   "engines": {
     "node": "14.15.4",
     "npm": "6.14.10"
   }
+=======
+  "keywords": []
+>>>>>>> 1f4a0cfc4785f9abfb7f5e18215a3a79cc4f8dca
 }
