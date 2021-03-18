@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 
 
 const vinylSchema = mongoose.Schema({
+    artist: String,
     title: String,
     year: String,
     genre: [{ type: String }],
