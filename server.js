@@ -12,7 +12,7 @@ const wishlistController = require('./controllers/wishlist');
 
 const APP = express();
 const PORT = process.env.PORT || 3003;
-const MONGODB_URI = process.env.MONGODB_URI
+// const MONGODB_URI = process.env.MONGODB_URI
 
 
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/' + `vinyl`;
