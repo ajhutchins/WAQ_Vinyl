@@ -24,7 +24,9 @@ COLLECTION.get('/', (req, res) => {
 
 // UPDATE ROUTE
 /*
-curl -X PUT -H "Content-Type: application/json" -d '{}' 'http://localhost:3003/users/collection/605191cc007d743b465ee710'
+curl -X PUT -H "Content-Type: application/json" -d '{}' 'http://localhost:3003/users/collection/60520cfc80db9d022db3699a'
+
+curl -X PUT -H "Content-Type: application/json" -d '{}' 'http://localhost:3003/users/wishlist/60520cfc80db9d022db3699a'
 (replace the id with the id from your curl request)
 */
 COLLECTION.put('/:id', (req, res) => {
