@@ -31,14 +31,8 @@ curl -X PUT -H "Content-Type: application/json" -d '{}' 'http://localhost:3003/u
 */
 COLLECTION.put('/:id', (req, res) => {
     // res.send('Hello from the  collections world')
-    console.log('PUT route')
-    console.log(req.params.id)
     Users.findOne({userName: req.body.username},(err, foundUser) => {
-        console.log(`Found User ${foundUser}`)
         Vinyl.findById(req.params.id, (err, foundVinyl) => {
-            console.log(`Found Vinyl ${foundVinyl}`)
-            console.log(`Found User ${foundUser}`)
-            console.log(`Found User collection ${foundUser.myCollection}`)
             foundUser.myCollection.push(foundVinyl)
             foundUser.save()
         })
