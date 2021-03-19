@@ -2,9 +2,7 @@ const mongoose = require('mongoose');
 
 
 const usersSchema = new mongoose.Schema({
-    username: {
-        type: String
-    },
+    username: String ,
     wishlist: [ {type: mongoose.Schema.Types.ObjectId, ref: 'Vinyl'} ],
     myCollection: [ {type: mongoose.Schema.Types.ObjectId, ref: 'Vinyl'} ],
     password: String
